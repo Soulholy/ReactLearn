@@ -13,6 +13,28 @@ npx create-react-app [ชื่อโปรเจค]
 cd .\week2react\
 ```
 
+**Folder ที่ต้องสนใจ** 
+* Public
+  * Images  
+* src
+  * Components
+  * data
 
 
+**--- src directory ---**
+
+ในไฟล์ **-- App.js --**
+
+ทำการ Import
+
+```javascript
+import "./App.css";
+import React from "react";
+import AppHeader from './components/AppHeader'
+import TattooItem from "./components/TattooItem";
+import TattooPost from "./components/TattooPost";
+import boxDatas from "./data/data";
+import { useState } from "react";
+import AppSearch from './components/AppSearh'
+```
 
