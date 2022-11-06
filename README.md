@@ -38,3 +38,67 @@ import { useState } from "react";
 import AppSearch from './components/AppSearh'
 ```
 
+Code ในส่วนของ 
+```Javascript
+function App() {
+  return(
+   <div> </div>
+  )
+  );
+}
+```
+
+ทำการเพิ่ม
+```javascript
+  function App() {
+  return(
+   <div> <AppHeader /> </div>   --- เพื่อเรียกใช้Header Components
+  )
+  );
+}
+```
+
+**src/components/AppHeader**
+```Javascript
+import React from 'react'
+
+import './AppHeader.css'
+
+export default function AppHeader() {
+  return (
+    <header className='app-header'>
+        <img className='app-header-logo' src="/images/logo.png" alt="" />
+    </header>
+  )
+}
+```
+
+
+**ขั้นตอนถัดมา เพิ่ม AppSearch TattooElement และ **
+```javascript
+<div className="App">
+
+      <AppHeader />   --- Header Component ---
+      
+      <section className="app-section">
+
+        <div className="app-container">
+
+          <AppSearch value={searchText} onValueChange={setSearchText}/>       ----- AppSearch Component -----
+          <div className="app-grid">
+          {tattooElement}  ----- tattooo Component -----
+          </div>
+
+        </div>
+      </section>
+
+      {getPost}
+      
+    </div>
+```
+
+
+
+
+
+
