@@ -74,7 +74,7 @@ export default function AppHeader() {
 ```
 
 
-**ขั้นตอนถัดมา เพิ่ม AppSearch TattooElement และ **
+**ขั้นตอนถัดมา เพิ่ม AppSearch TattooElement **
 ```javascript
 <div className="App">
 
